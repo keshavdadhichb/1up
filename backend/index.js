@@ -11,8 +11,8 @@ app.use(express.json());
 
 // Import routes
 const authRoutes = require('./src/routes/authRoutes');
-const listingsRoutes = require('./src/routes/listingRoutes');
-const requestsRoutes = require('./src/routes/requestRoutes');
+const listingRoutes = require('./src/routes/listingRoutes');
+const requestRoutes = require('./src/routes/requestRoutes');
 const profileRoutes = require('./src/routes/profileRoutes'); // <-- Added
 
 // Use routes
