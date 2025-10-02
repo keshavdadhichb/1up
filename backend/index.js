@@ -11,14 +11,14 @@ app.use(express.json());
 
 // Import routes
 const authRoutes = require('./src/routes/authRoutes');
-const listingsRoutes = require('./src/routes/listingsRoutes');
-const requestsRoutes = require('./src/routes/requestsRoutes');
+const listingsRoutes = require('./src/routes/listingRoutes');
+const requestsRoutes = require('./src/routes/requestRoutes');
 const profileRoutes = require('./src/routes/profileRoutes'); // <-- Added
 
 // Use routes
 app.use('/api/auth', authRoutes);
-app.use('/api/listings', listingsRoutes);
-app.use('/api/requests', requestsRoutes);
+app.use('/api/listings', listingRoutes);
+app.use('/api/requests', requestRoutes);
 app.use('/api/profile', profileRoutes); // <-- Added
 
 // A simple test route to make sure the server is working
